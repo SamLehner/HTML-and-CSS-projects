@@ -1,197 +1,154 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
 		<meta charset="utf-8">
 		<title>Soups R' Us</title>
 		<link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">	
 	</head>
-	<body>
 	
-		<!-- NAV -->
-		<div>
-			<div>
-				<u1>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>RESERVATIONS</li></a>
-				</ul>
-			</div>
+<body>
+<h3 style="text-align:center">Lightbox</h3>
+
+<div class="row">
+	<div class="column">
+		<img src="./images/thumb/thumbnail_1.jpg" onclick="openSlideshow();currentSlide(1)" class="hover-shadow">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_2.jpg" onclick="openSlideshow();currentSlide(2)" class="hover-shadow" alt="Tasty Chicken Noodle Soup">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_3.jpg" onclick="openSlideshow();currentSlide(3)" class="hover-shadow" alt="Cheesy Potato Soup!">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_4.jpg" onclick="openSlideshow();currentSlide(4)" class="hover-shadow" alt="Cream of Mushroom Soup!">
+	</div>
+	
+	<div class="column">
+		<img src="./images/thumb/thumbnail_5.jpg" onclick="openSlideshow();currentSlide(5)" class="hover-shadow" alt="Tasty Dumpling Soup!">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_6.jpg" onclick="openSlideshow();currentSlide(6)" class="hover-shadow" alt="Tasty Tomato Soup!">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_7.jpg" onclick="openSlideshow();currentSlide(7)" class="hover-shadow" alt="Our new egg soup!">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_8.jpg" onclick="openSlideshow();currentSlide(8)" class="hover-shadow" alt="Cheesy Broccoli Soup!">
+	</div>
+
+	<div class="column">
+		<img src="./images/thumb/thumbnail_9.jpg" onclick="openSlideshow();currentSlide(9w)" class="hover-shadow" alt="Spicy Noodle Soup!">
+	</div>
+
+</div>
+
+
+
+<!--Model/Lightbox-->
+<div id="myModel" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="model-content">
+
+		<div class="mySlides">
+			<div class="numbertext">1 / 9</div>
+			<img src="Images/Thumb/thumbnail_1.jpg" style="width:100%">
 		</div>
-		<!--END NAV-->
-		
-		<!--HOME-->
-		<div id="home">
-			<div>
-				<div>
-					<span><h1>Soups R' Us</h1></span>
-					<p>Below we have pictures and videos of our soups!</p>
-				</div>
-			</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 9</div>
+			<img src="Images/Thumb/thumbnail_2.jpg" style="width:100%">
 		</div>
-		<!--END HOME-->
-		
-		<!--GALLERY-->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
-					
-					<!--PHOTO CONTAINER 1-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.jpg" alt="Tasty Veggie Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 1-->
-					
-					<!--PHOTO CONTAINER 2-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.jpg" alt="Tasty Chicken Noodle Soup">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 2-->
-					
-					<!--PHOTO CONTAINER 3-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.jpg" alt="Cheesy Potato Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 3-->
-					
-					<!--PHOTO CONTAINER 4-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.jpg" alt="Cream of Mushroom Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 4-->
-					
-					<!--PHOTO CONTAINER 5-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_5.jpg" alt="Tasty Dumpling Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 5-->
-					
-					<!--PHOTO CONTAINER 6-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_6.jpg" alt="Tasty Tomato Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 6-->
-					
-					<!--PHOTO CONTAINER 7-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_7.jpg" alt="Our new egg soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 7-->
-					
-					<!--PHOTO CONTAINER 8-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_8.jpg" alt="Cheesy Broccoli Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 8-->
-					
-					<!--PHOTO CONTAINER 9-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_9.jpg" alt="Spicy Noodle Soup!">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p><em>We have many tasty soups for you to try!</em></p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 9-->
-				</div>
-			</div>
-		</section>
-		<!--END GALLERY-->
-		
-		<!--VIDEOS-->
-		<section>
-			<iframe width="1195" height="672" src="https://www.youtube.com/embed/Z3ZvdXk43CM" title="Why you should eat soup!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		
-		<!--RSVP-->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
-						<h2><span>The dinner of your dreams starts right here!</span>
-							<br />Reserve a spot for dinner today!
-						</h2>
-						<p>
-							Please provide us with your basic contact information.
-						</p>
-						<div>
-							<form action="" method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="text" value="Email Address">
-								<input class="rsvp" type="text" value="Phone Number">
-								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--END RSVP-->
-		
-		<!--FOOTER-->
-		<div>
-			<footer>
-			www.soupsrus.soups &nbsp;|&nbsp; &copy: 2020
-			</footer>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 9</div>
+			<img src="Images/Thumb/thumbnail_3.jpg" style="width:100%">
 		</div>
-		<!--END FOOTER-->
-		
-	</body>
+
+		<div class="mySlides">
+			<div class="numbertext">4 / 9</div>
+			<img src="Images/Thumb/thumbnail_4.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">5 / 9</div>
+			<img src="Images/Thumb/thumbnail_5.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">6 / 9</div>
+			<img src="Images/Thumb/thumbnail_6.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">7 / 9</div>
+			<img src="Images/Thumb/thumbnail_7.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">8 / 9</div>
+			<img src="Images/Thumb/thumbnail_8.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">9 / 9</div>
+			<img src="Images/Thumb/thumbnail_9.jpg" style="width:100%">
+		</div>
+
+		<!--Next/Previous Controls-->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!--Caption Text-->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<!--Thumbnail image controls-->
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_6.jpg" onclick="currentSlide(6)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_7.jpg" onclick="currentSlide(7)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_8.jpg" onclick="currentSlide(8)" alt="Tasty Soup">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="Images/Thumb/thumbnail_9.jpg" onclick="currentSlide(9)" alt="Tasty Soup">
+		</div>
+	</div>
+</div>
+
+<sript src="./JS/one_page_website.js"></sript>
+</body>
 </html>
