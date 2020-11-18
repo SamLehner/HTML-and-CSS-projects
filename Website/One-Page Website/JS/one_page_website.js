@@ -4,8 +4,8 @@ function openSlideshow() {
 }
 
 //CLose the modal
-function closeModel() {
-    document.getElementById("myModel").style.display = "none";
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
 }
 
 var slideIndex = 1;
@@ -31,7 +31,7 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; <dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
